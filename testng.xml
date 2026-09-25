@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="OrangeHRM Suite">
-    <test name="Employee Lifecycle Test">
+<suite name="OrangeHRM API Validation">
+    <test name="UI and API employee comparison">
         <classes>
-            <class name="com.orangehrm.tests.EmployeeLifecycleTest"/>
+            <class name="com.orangehrm.tests.EmployeeApiValidationTest"/>
         </classes>
     </test>
 </suite>
