@@ -32,7 +32,7 @@ public class EmployeeApiValidationTest {
                     .getAttribute("value");
             String lastName = driver.findElement(By.name("lastName")).getAttribute("value");
             String employeeId = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.cssSelector("input.oxd-input[name='employeeId']"))).getAttribute("value");
+                    By.xpath("//label[normalize-space()='Employee Id']/../following-sibling::div//input"))).getAttribute("value");
 
             Assert.assertFalse(firstName.isBlank(), "UI first name is empty");
             Assert.assertFalse(lastName.isBlank(), "UI last name is empty");
